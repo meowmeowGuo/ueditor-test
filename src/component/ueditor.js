@@ -28,6 +28,7 @@ class Ueditor extends React.Component {
   }
 
   initEditor() {
+    /*初始化编辑器*/
     const { id, config } = this.props;
     const ueEditor = UE.getEditor(this.props.id, config);
     const self = this;
@@ -39,15 +40,16 @@ class Ueditor extends React.Component {
       }
     });
     editor = ueEditor;
-    this.setState({editor:ueEditor});
+    this.setState({editor});
   }
   getVal(){
+    /*获取编辑器内容函数*/
     let {editor} = this.state;
     let content = editor.getContent();
     return content;
   }
   render(){
-    let { content,id, name } = this.props;
+    let { content,id } = this.props;
     return (
       <div >
         <textarea id={id}

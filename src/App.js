@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'antd';
 import Ueditor from './component/ueditor';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 const FormItem = Form.Item;
 class AppForm extends Component {
