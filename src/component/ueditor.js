@@ -39,7 +39,7 @@ class Ueditor extends React.Component {
         self.initEditor();
       }
     });
-    editor = ueEditor;
+    let editor = ueEditor;
     this.setState({editor});
   }
   getVal(){
